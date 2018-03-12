@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>mimakejian</title>
-</head>
-<body>
-<h1>密码可见</h1>  
-</body>
-</html>
+  <title>密码可见</title>
+  </head>
+    <style>
+#di{
+      text-align: center;
+          padding-top: 100px;
+            
+}
+#psw{
+      height: 20px;
+        
+}  
+  </style>
+    <script>
+window.onload=function(){
+       var tu=document.getElementById('tu');
+             var psw=document.getElementById('psw');
+             tu.onmouseover=function(){
+                      tu.src="images/show.png";
+                              psw.type="text";//是密码可见将类型改为text即可；
+                                      
+             }
+             tu.onmouseout=function(){
+                      tu.src="images/hide.png";
+                              psw.type="password";
+                                  
+             }
+              
+}
+   
+  </script>
+  <body>
+  <div id="di">
+      <span style="font-size: 20px;">密码:&nbsp;</span>
+            <input type="password" id="psw" placeholder="请输入密码"/><button id="tu">可见</button>
+          </div>
+             
+          </body>
+          </html>
+
