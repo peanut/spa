@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>fanweikongjian</title>
-</head>
-<body>
-<h1>范围控件</h1> 
-</body>
-</html>
+  <title>年龄范围</title>
+  </head>
+    <style>
+#ran{
+      width: 300px;
+        
+}
+  </style>
+    <script>
+window.onload=function(){
+        var ran=document.getElementById('ran');
+        ran.onclick=function(){
+                var age=document.getElementById('age'); 
+                      age.innerHTML='你的年龄是:'+ran.value+'岁';
+                             
+                          
+        }
+          
+}
+  </script>
+  <body>
+  <div id="di">
+       年龄：<input  id="ran" type="range" min="0" max="100" value="0"/>
+          <div id="age">你的年龄是:0岁</div>
+           </div>
+           </body>
+           </html>
+
