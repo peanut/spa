@@ -1,0 +1,13 @@
+#di {
+	width: 40%;
+	margin: 40px auto 0 auto;
+}
+#progress {
+	width: 200px;
+}
+button {
+	width: 70px;
+	height: 40px;
+	border: none;
+	border-radius: 8px;
+}
